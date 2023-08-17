@@ -19,6 +19,7 @@ body {
     "main" 1fr
     "footer";
   color: #edf2f7;
+  font-family: 'Klee One', cursive;
   font-size: 1rem;
   background-color: #112435;
 }
@@ -34,9 +35,10 @@ header {
 }
 
 header p.logo {
+  font-family: 'Klee One', cursive;
   font-size: 2rem;
-  padding-top: 5px;
   padding-left: 20px;
+  padding-bottom: 3px;
 }
 
 /* headerR ハンバーガーのアイコン */
@@ -77,7 +79,7 @@ header p.logo {
 /* ハンバーガーメニューは最初は隠す */
 .headerBack {
   display: none;
-  background-color: #263e6a;
+  background-color: #22486a;
 }
 
 /* ハンバーガーメニューのリンク表示 */
@@ -114,7 +116,7 @@ article {
   padding-top: 0;
   padding-bottom: 10px;
   margin: 0 auto 50px auto;
-  background-color: #263e6a;
+  background-color: #22486a;
 }
 
 #about {
@@ -161,14 +163,13 @@ h1 {
 
 h3 {
   margin-top: 0;
-  padding: 10px 0 0 0;
 }
 
 .fusen {
   display: inline-block;
   font-size: 1em;
   padding: 0.5em 1.5em 0.5em 1em;
-  /* margin-bottom: 1em; */
+  margin-bottom: 10px;
   border-left: 8px solid #edf2f7;
   background-color: #22486a;
 }
@@ -186,4 +187,14 @@ li {
 .copyright {
   font-size: 0.9rem;
   text-align: center;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+  .headerBack ul {
+    flex-direction: column;
+    /* 縦並び */
+    align-items: center;
+    /* 中央寄せ */
+  }
 }
